@@ -1,0 +1,62 @@
+@import "~normalize-scss/sass/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  background: #E5E5E5;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  @media (max-width:767px) {
+    padding: 0px 10px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 0px 10px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding: 0px 10px;
+  }
+}
+
+.text-date {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #909599;
+}
+
+.like-block {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &_active {
+    svg {
+      fill: #EB5757 !important;
+    }
+  }
+  svg {
+    fill: #ccc
+  }
+  &__count {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #909599;
+  }
+}
+.typical-label {
+  background: rgba(141, 190, 80, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  padding: 8px 11px;
+  color: #fff;
+  display: inline-flex;
+  &_dark {
+    color: #666565;
+  }
+}
+
